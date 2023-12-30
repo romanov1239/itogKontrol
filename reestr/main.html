@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 ALIGN="center">Реестр домашних животных</h2>
+    <br>
+    <div class="form-wrapper">
+        <form action="index1.php" method="post">
+            <div class="form-input">
+                <label for="name">Имя животного</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-input">
+                <label for="birthDate">Дата рождения</label>
+                <input type="text" id="birthDate" name="birthDate" required>
+            </div>
+            
+            <div class="form-input">
+                <label for="animalType">Тип животного</label>
+                <select id="animalType" name="animalType">
+                    <option value="Dog">Собака</option>
+                    <option value="Cat">Кошка</option>
+                    <option value="Hamster">Хомяк</option>
+                </select>
+            </div>
+            
+            <button class="button" type="submit" name="addAnimal">Добавить животное</button>
+        </form>
+    </div>
+    
+    <div class="form-wrapper">
+        <form action="index1.php" method="post">
+            <div class="form-input">
+                <label for="animalName">Имя животного</label>
+                <input type="text" id="animalName" name="animalName" required>
+            </div>
+            
+            <button class="button" type="submit" name="listCommands">Список команд</button>
+        </form>
+    </div>
+    
+    <div class="form-wrapper">
+        <form action="index1.php" method="post">
+            <div class="form-input">
+                <label for="animalName2">Имя животного</label>
+                <input type="text" id="animalName2" name="animalName" required>
+            </div>
+            
+            <div class="form-input">
+                <label for="newCommand">Новая команда</label>
+                <input type="text" id="newCommand" name="newCommand" required>
+            </div>
+            
+            <button class="button" type="submit" name="trainAnimal">Тренировать животное</button>
+        </form>
+    </div>       
+<div class="form-wrapper">
+    <form action="index1.php" method="post">
+        <div class="form-input">
+            <label for="animalType">Тип животного</label>
+            <select id="animalType" name="animalType">
+                <option value="Dog">Собаки</option>
+                <option value="Cat">Кошки</option>
+                <option value="Hamster">Хомяки</option>
+            </select>
+        </div>
+        
+        <button class="button" type="submit" name="listAnimals">Список животных</button>
+    </form>
+</div>
+
+</body>
+</html>
